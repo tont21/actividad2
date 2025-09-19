@@ -17,10 +17,12 @@ food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
+"""5 colores para elegir con el importado de random - choice"""
 Colors = ['green', 'yellow', 'blue', 'purple', 'magenta']
 
 colorSnake = choice(Colors)
 colorFood = choice(Colors)
+"""si se repite un color, buscar otro color de la lista"""
 while(True):
     if(colorSnake == colorFood):
         colorFood = choice(Colors)
